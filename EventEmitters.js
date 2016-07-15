@@ -27,10 +27,6 @@ eventEmitter.emit('connection');
 eventEmitter.removeListener('connection', listener1);
 console.log('Listener1 will not listen now');
 
-//  Remove the binding of listener2 function
-eventEmitter.removeListener('connection', listener2);
-console.log('Listener2 will not listen now');
-
 // Fire the connection event 
 eventEmitter.emit('connection');
 
