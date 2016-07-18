@@ -1,11 +1,10 @@
 //  Job.js
 var util = require('util')
 var Job = function Job() {
-    var job = this
     //  ...
-    job.process = function () {
+    this.process = function () {
         //  ...
-        job.emit('done', {completeOn: new Date()})
+        this.emit('done', {completeOn: new Date()})
     }
 }
 
